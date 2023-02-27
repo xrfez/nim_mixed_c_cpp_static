@@ -1,6 +1,8 @@
 ## Mixed C and C++ Project Structure
 
-compile with `nim c -r helloWorld.nim`
+`git clone "https://github.com/xrfez/nim_mixed_c_cpp_static"`  
+`cd nim_mixed_c_cpp_static`  
+`nim c -r helloWorld.nim`
 
 At compile time generate .o files for the C++ dependencies with the c++ compiler and save to the nimcache directory  
 Link to the o files in nim  
