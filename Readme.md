@@ -9,5 +9,5 @@ Compile nim using the c backend
 
 This examples assumes GCC is the compiler and windows.
 
-I'm pretty sure this would not work if 2 differnect compilers are used for the C and C++ compilation.
+I'm pretty sure this would not work if 2 different compilers are used for the C and C++ compilation.
 
