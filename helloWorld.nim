@@ -8,9 +8,6 @@ proc currentSourceDir(): string {.compileTime.} =
 # Get nimcache directory at compile time  
 const nimcache = querySetting(SingleValueSetting.nimcacheDir)
 
-# Get source Directory
-const sourceDir {.used.} = querySetting(SingleValueSetting.projectFull)
-
 # Compile cpp to .o files at compile time
 const helloWorldConstant {.used.} = staticExec(fmt"g++ -c {currentSourceDir()}/helloWorld.cpp -o {nimcache}/helloWorld.cpp.o")
 
