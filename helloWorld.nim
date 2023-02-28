@@ -1,5 +1,8 @@
 import std/[compilesettings, strformat, strutils]
 
+when defined(linux):
+  {.passL: "-Xlinker -rpath .".}
+
 proc currentSourceDir(): string {.compileTime.} =
   ## Get the Source Directory at compile time
   result = currentSourcePath().replace("\\", "/")
